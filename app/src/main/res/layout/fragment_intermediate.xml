@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCCDB8"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.IntermediateFragment">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="@dimen/_10mdp"
+        android:layout_marginBottom="@dimen/_10mdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/midLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mid-Level Professional Android Development"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@drawable/text_view_bg"
+                android:paddingTop="@dimen/_5mdp"
+                android:paddingBottom="@dimen/_5mdp"
+                android:paddingStart="@dimen/_10mdp"
+                android:paddingEnd="@dimen/_10mdp"
+                android:textColor="#ff22"
+                android:layout_marginTop="@dimen/_10mdp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/splashScreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/splash_screen"
+               app:layout_constraintTop_toBottomOf="@id/midLevel"
+                android:layout_marginTop="@dimen/_8mdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@drawable/text_view_bg"
+                android:padding="@dimen/_10mdp"
+                android:textSize="@dimen/_15font_mdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/acme"/>
+
+            <TextView
+                android:id="@+id/splashScrrenDesc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10mdp"
+                android:background="@color/text_bg"
+                android:padding="@dimen/_10mdp"
+                android:text="@string/splash_screen_desc"
+                android:textColor="@color/textColor"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/splashScreen" />
+
+            <TextView
+                android:id="@+id/fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15mdp"
+                android:background="@drawable/text_view_bg"
+                android:fontFamily="@font/acme"
+                android:padding="@dimen/_10mdp"
+                android:text="@string/fragment_almost_all_about"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15font_mdp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/splashScrrenDesc" />
+
+            <TextView
+                android:id="@+id/fragment_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10mdp"
+                android:background="@color/text_bg"
+                android:padding="@dimen/_10mdp"
+                android:text="@string/fragment_desc"
+                android:textColor="@color/textColor"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fragment" />
+
+            <TextView
+                android:id="@+id/bottomNavView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15mdp"
+                android:background="@drawable/text_view_bg"
+                android:fontFamily="@font/acme"
+                android:padding="@dimen/_10mdp"
+                android:text="@string/bottom_navigation_view_custom"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15font_mdp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fragment_desc" />
+
+            <TextView
+                android:id="@+id/bottomNavDesc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10mdp"
+                android:background="@color/text_bg"
+                android:padding="@dimen/_10mdp"
+                android:text="@string/bottom_nav_desc"
+                android:textColor="@color/textColor"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bottomNavView" />
+            <TextView
+                android:id="@+id/drawerLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/drawer_layout_like_telegram"
+                android:background="@drawable/text_view_bg"
+                android:textSize="@dimen/_15font_mdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/acme"
+                android:padding="@dimen/_10mdp"
+                app:layout_constraintTop_toBottomOf="@id/bottomNavDesc"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/_15mdp"/>
+
+            <TextView
+                android:id="@+id/drawerDesc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10mdp"
+                android:background="@color/text_bg"
+                android:padding="@dimen/_10mdp"
+                android:text="@string/drawer_layout_desc"
+                android:textColor="@color/textColor"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/drawerLayout" />
+
+            <TextView
+                android:id="@+id/listView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/listview_with_base_adapter"
+                android:background="@drawable/text_view_bg"
+                android:textSize="@dimen/_15font_mdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/acme"
+                android:padding="@dimen/_10mdp"
+                app:layout_constraintTop_toBottomOf="@id/drawerDesc"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/_15mdp"/>
+
+            <TextView
+                android:id="@+id/listViewDesc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10mdp"
+                android:background="@color/text_bg"
+                android:padding="@dimen/_10mdp"
+                android:text="@string/listview_desc"
+                android:textColor="@color/textColor"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/listView" />
+            <TextView
+                android:id="@+id/recyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recycler_view"
+                android:background="@drawable/text_view_bg"
+                android:textSize="@dimen/_15font_mdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/acme"
+                android:padding="@dimen/_10mdp"
+                app:layout_constraintTop_toBottomOf="@id/listViewDesc"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/_15mdp"/>
+            <TextView
+                android:id="@+id/recyclerViewDesc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10mdp"
+                android:background="@color/text_bg"
+                android:padding="@dimen/_10mdp"
+                android:text="@string/recycler_view_desc"
+                android:textColor="@color/textColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/recyclerView" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
